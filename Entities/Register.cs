@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 using System.Collections.Generic;
 using ClassHerence.Entities;
 
@@ -38,7 +39,7 @@ namespace ClassHerence.Entities
             Console.Write("RA: ");
             string ra = Console.ReadLine();
             Console.Write("Monthy Payment: $ ");
-            double pay = double.Parse(Console.ReadLine());
+            double pay = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             Console.Write("Cpf Number: ");
             string cpf = Console.ReadLine();
             Console.Write("Birth Date: ");
@@ -55,7 +56,7 @@ namespace ClassHerence.Entities
             Console.Write("Functional: ");
             string func = Console.ReadLine();
             Console.Write("Salary: $ ");
-            double sal = double.Parse(Console.ReadLine());
+            double sal = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             Console.Write("Cpf Number: ");
             string cpf = Console.ReadLine();
             Console.Write("Birth Date: ");
